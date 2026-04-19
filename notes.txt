@@ -1,0 +1,18 @@
+// laravel new nameproject pour creer un new projet
+// php artisan migrate pour connecter la bdd
+// php artisan serve pour lancer le serveur
+// php artisan make:model name -m pour creer un model avec migration
+// php artisan make:controller namecontroller pour creer un controller
+// php artisan make:controller Api/AuthController creer un controller dans le dossier api
+// php artisan make:request SignupRequest pour creer une classe  request dans le dossier reques
+
+//  php artisan make:controller Api/UserController --model=User --requests --resource
+// php artisan db:seed 
+
+
+// front end
+// npm create vite pour installer le framework frontend que l'on souhaite (dossier react ici)
+// npm install pour installer les dépendances
+// npm run dev pour lancer le serveur
+
+//composer create-project laravel/laravel {directory} 
