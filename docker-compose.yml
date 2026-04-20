@@ -7,8 +7,6 @@ services:
     container_name: laravel_app
     ports:
       - "8000:80"
-    volumes:
-      - .:/var/www/html
     depends_on:
       - mysql
 
@@ -18,8 +16,6 @@ services:
     container_name: react_app
     ports:
       - "3000:3000"
-    volumes:
-      - ./react:/app
     depends_on:
       - laravel
 
