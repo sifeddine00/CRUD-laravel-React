@@ -3,24 +3,6 @@
   become: no
 
   tasks:
-    - name: Install Docker
-      apt:
-        name: docker.io
-        state: present
-        update_cache: yes
-
-    - name: Install docker-compose
-      get_url:
-        url: https://github.com/docker/compose/releases/download/v2.24.0/docker-compose-Linux-x86_64
-        dest: /usr/local/bin/docker-compose
-        mode: '0755'
-
-    - name: Start Docker service
-      service:
-        name: docker
-        state: started
-        enabled: yes
-
     - name: Run docker-compose
       shell: docker-compose down --remove-orphans && docker-compose up --build -d
       args:
