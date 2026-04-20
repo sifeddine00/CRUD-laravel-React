@@ -6,6 +6,7 @@ pipeline {
         stage('Clone') {
             steps {
                 git branch: 'master',
+                    credentialsId: 'Github-cred',
                     url: 'https://github.com/sifeddine00/CRUD-laravel-React.git'
             }
         }
