@@ -1,6 +1,6 @@
 ---
 - hosts: local
-  become: yes
+  become: no
 
   tasks:
     - name: Install Docker
@@ -25,4 +25,3 @@
       shell: docker-compose down --remove-orphans && docker-compose up --build -d
       args:
         chdir: /var/jenkins_home/workspace/crud-pipeline
-        
