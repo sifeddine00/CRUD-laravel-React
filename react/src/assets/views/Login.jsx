@@ -48,7 +48,7 @@ export default function Login() {
   return (
    
         <form action="" onSubmit={onsubmit}>
-          <h1>Login</h1>
+          <h1>LOGIN</h1>
            {errors && (
             <div className="alert">
               
